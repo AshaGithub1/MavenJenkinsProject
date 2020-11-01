@@ -9,6 +9,9 @@ pipeline {
     }
 
     stage('Smoke Tests') {
+      when {
+        branch 'development'
+      }
       steps {
         echo 'Run 2 Chrome Tests'
         git(url: 'https://github.com/AshaGithub1/EyeAutomation', branch: 'master', poll: true)
