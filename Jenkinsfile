@@ -1,1 +1,6 @@
-This is Jenkins test file
+
+pipeline {
+  agent any
+  stages{
+  }
+}
