@@ -11,6 +11,8 @@ pipeline {
     stage('Smoke Tests') {
       steps {
         echo 'Run 2 Chrome Tests'
+        git(url: 'https://github.com/AshaGithub1/EyeAutomation', branch: 'master', poll: true)
+        bat 'mvn test -DEnvironment=QA'
       }
     }
 
@@ -49,6 +51,7 @@ pipeline {
     stage('Certify') {
       steps {
         echo 'QA Certified'
+        input(message: 'Confirm to certify', ok: 'Yes')
       }
     }
 
