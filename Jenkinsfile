@@ -1,7 +1,5 @@
-
 pipeline {
   agent any
-  
   stages {
     stage('Development Build') {
       steps {
@@ -9,11 +7,13 @@ pipeline {
         echo 'Create a Build Using Repo'
       }
     }
+
     stage('Smoke Tests') {
       steps {
         echo 'Run 2 Chrome Tests'
       }
     }
+
     stage('Deploy in QA') {
       steps {
         echo 'Stop the running server'
@@ -22,6 +22,7 @@ pipeline {
         echo 'Notify to QA by Email'
       }
     }
+
     stage('Integration Test') {
       parallel {
         stage('Integration Test') {
@@ -29,27 +30,27 @@ pipeline {
             echo 'Sanity Tests (UI)'
           }
         }
+
         stage('API Test') {
           steps {
             echo 'Run REST Automation Tests'
           }
         }
+
         stage('Performance Testing') {
           steps {
             echo 'Run JMeter tests'
           }
         }
+
       }
     }
+
     stage('Certify') {
       steps {
         echo 'QA Certified'
       }
     }
-  }
 
-  
-  
-  
-  
+  }
 }
