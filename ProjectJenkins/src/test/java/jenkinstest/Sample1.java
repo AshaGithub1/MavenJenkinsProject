@@ -55,7 +55,7 @@ else if(browser.equals("edge"))
 		driver = new ChromeDriver();
 		
 				String url = System.getProperty("url");
-		if(url.contains("google"))		{
+		if(url.equals("google"))		{
 				driver.get("http://www.google.com");
 		}
 
