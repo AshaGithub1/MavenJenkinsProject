@@ -21,9 +21,9 @@ public class Sample1 {
 		//System.out.println("THIS IS MAVEN test program.....!");
 		RemoteWebDriver driver;
 		
-		/*WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.google.com/");*/
+		driver.get("https://www.google.com/");
 		
 		
 	//	ZipUtil.pack(new File("./reports"), new File("./reports.zip"));
@@ -51,7 +51,7 @@ else if(browser.equals("edge"))
 		 
 		
 		
-		WebDriverManager.chromedriver().setup();
+		/*WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 				String url = System.getProperty("url");
@@ -63,7 +63,7 @@ else if(browser.equals("edge"))
 		{
 				driver.get("http://www.mail.yahoo.com/");
 			driver.get("www");
-		}
+		}*/
 
 			
 	}
