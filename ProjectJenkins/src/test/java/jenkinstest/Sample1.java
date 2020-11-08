@@ -57,7 +57,7 @@ else if(browser.equals("edge"))
 				String url = System.getProperty("url");
 		if(url.equals("google"))		{
 				driver.get("http://www.google.com");
-		}
+		} 
 
 		else if(url.equals("yahoo"))
 		{
