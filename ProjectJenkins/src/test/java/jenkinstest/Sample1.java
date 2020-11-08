@@ -62,6 +62,7 @@ else if(browser.equals("edge"))
 		else if(url.equals("yahoo"))
 		{
 				driver.get("http://www.mail.yahoo.com/");
+			driver.get("www");
 		}
 
 			
