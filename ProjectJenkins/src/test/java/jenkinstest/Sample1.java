@@ -48,7 +48,7 @@ else if(browser.equals("edge"))
 	WebDriverManager.edgedriver().setup();
 	driver = new EdgeDriver();
 } */
-		
+		 
 		
 		
 		WebDriverManager.chromedriver().setup();
